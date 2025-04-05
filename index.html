@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fahima Nizam Nova | Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my personal website hosted on GitHub Pages!</p>
+
+<header>
+  <h1>&lt;Fahima Nizam Nova /&gt;</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>// About Me</h2>
+  <p>Hello 👋 I'm <code>Fahima</code>, a full-stack developer passionate about clean code, open source, and problem-solving. I love building things that live on the internet.</p>
+</section>
+
+<section id="projects">
+  <h2>// Projects</h2>
+  <div class="projects">
+    <div class="project-card">
+      <h3>🔐 MyBlog</h3>
+      <p>A developer-focused app to store, search, and tag code snippets. Built with <code>React</code>, <code>Firebase</code>.</p>
+      <a href="https://github.com/fahimanizam/My-blog" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <h3>📊 Construction Support</h3>
+      <p>Tracks your Leetcode & Codeforces progress with sleek charts. Built with <code>Python</code> + <code>Flask</code>.</p>
+      <a href="https://github.com/fahimanizam/construction_support" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>// Contact</h2>
+  <p><strong>Email:</strong> <a href="mailto:fahimanizamnova@gmail.com" style="color: var(--accent);">fahimanizamnova@gmail.com</a></p>
+  <p><strong>GitHub:</strong> <a href="https://github.com/fahimanizam" target="_blank">fahimanizam</a></p>
+  <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/fahimanizam" target="_blank">Fahima Nizam Nova</a></p>
+</section>
+
+<footer>
+  <p>© 2025 FahimaNizamNova | Made with <code>&lt;/&gt;</code> and ☕</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
