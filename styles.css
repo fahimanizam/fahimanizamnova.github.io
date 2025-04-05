@@ -1,0 +1,130 @@
+:root {
+    --bg: #0d1117;
+    --fg: #c9d1d9;
+    --accent: #58a6ff;
+    --card-bg: #161b22;
+    --border: #30363d;
+  }
+  
+  .light {
+    --bg: #fefefe;
+    --fg: #0d1117;
+    --accent: #0366d6;
+    --card-bg: #f4f4f4;
+    --border: #ddd;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  header {
+    background: var(--card-bg);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--accent);
+  }
+  
+  nav a {
+    margin-left: 1rem;
+    color: var(--fg);
+    text-decoration: none;
+    border-bottom: 1px dashed transparent;
+    transition: border 0.2s ease;
+  }
+  
+  nav a:hover {
+    border-bottom: 1px dashed var(--accent);
+  }
+  
+  .theme-toggle {
+    margin-left: 1rem;
+    padding: 0.3rem 0.6rem;
+    background: none;
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    color: var(--accent);
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  section {
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  h2 {
+    color: var(--accent);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+  }
+  
+  .projects {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  
+  .project-card a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--card-bg);
+    color: #777;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+  }
+  
+  code {
+    background: var(--card-bg);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    color: #d2a8ff;
+  }
+  
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav {
+      margin-top: 0.5rem;
+    }
+  
+    nav a, .theme-toggle {
+      display: inline-block;
+      margin: 0.5rem 0 0 0;
+    }
+  }
+  
