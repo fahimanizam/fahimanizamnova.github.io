@@ -1,6 +1,6 @@
 // Fetch and render the markdown content
 if (document.getElementById('cheatsheet')) {
-  fetch('https://raw.githubusercontent.com/fahimanizam/kubernetes-cheats/main/kubernetes-cheatsheet.md')
+  fetch('https://github.com/fahimanizam/fahimanizamnova.github.io/blob/master/cheatsheets/kubernetes.md')
     .then(res => res.text())
     .then(md => {
       document.getElementById('cheatsheet').innerHTML = marked.parse(md);
