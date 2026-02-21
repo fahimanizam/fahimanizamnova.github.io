@@ -1,62 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fahima Nizam Nova | Developer Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fahima Nizam Nova | Portfolio</title>
+
+  <link rel="icon" type="image/png" href="assets/images/coffee.png">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Creepster&family=Flavors&family=Rubik+Wet+Paint&family=Patrick+Hand&family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<header>
-  <h1>&lt;Fahima Nizam Nova /&gt;</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo" id="logo">
+        <img src="assets/images/hp_owl.png" alt="My animation" width="20">
+        NØVA
+      </div>
+
+      <div class="nav-menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#mini-projects">MiniProjects</a>
+        <a href="https://drive.google.com/file/d/1f1sk7_fA4Vdjxr1X1xU9TRYpZYT4E-xo/view?usp=sharing"
+          target="_blank">Resume</a>
+        <a href="#more-about">More</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- <div class="nav-social">
+        <a href="https://github.com/fahimanizam" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/fahima-nizam-nova/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/fahimanizam" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div> -->
+    </div>
   </nav>
-</header>
 
-<section id="about">
-  <h2>// About Me</h2>
-  <p>Hello 👋 I'm <code>Fahima</code>, a full-stack developer passionate about clean code, open source, and problem-solving. I love building things that live on the internet.</p>
-</section>
+  <!-- ================= RESUME ================= -->
+  <section id="resume">
+    <div class="container">
+      <div class="title">
+        <img src="assets/images/profile_pic.png" alt="Fahima Nizam Nova" class="profile-pic">
+        <h1>Fahima Nizam Nova</h1>
+        <p>Full Stack Developer @ Ørsted | <span class="typing"></span></p>
+      </div>
 
-<section id="projects">
-  <h2>// Projects</h2>
-  <div class="projects">
-    <div class="project-card">
-      <h3>🔐 MyBlog</h3>
-      <p>A developer-focused app to store, search, and tag code snippets. Built with <code>React</code>, <code>Firebase</code>.</p>
-      <a href="https://github.com/fahimanizam/My-blog" target="_blank">View on GitHub</a>
+      <div class="grid">
+        <div>
+
+          <div class="section" id="about">
+            <h2>Hello World!</h2>
+            <p>
+              I am Nova from Bangladesh 🇧🇩 passionate about building technology that solves real-world problems,
+              continuously seek growth — not only as an engineer, but as a contributor to projects that aim to make a
+              positive difference. I am
+            </p>
+
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-top: 15px;">
+              <li>working with curiosity, precision, and purpose</li>
+              <li>focusing on clean design and scalable solutions</li>
+              <li>seeking for good user experiences</li>
+              <li>creating solutions that matter</li>
+            </ul>
+          </div>
+
+          <div class="section" id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+              <h3>Daffodil International University <span class="degree">[BASc in Computer & Information Systems]</span>
+              </h3>
+              <span class="duration">Passing Year: 2020 | CGPA: 3.84/4.00</span>
+            </div>
+            <div class="divider"></div>
+            <div class="education-item">
+              <h3>Aminur Rahman College <span class="degree">[HSC in Science]</span></h3>
+              <span class="duration">Passing Year: 2014 | CGPA: 4.10/5.00</span>
+            </div>
+            <div class="divider"></div>
+            <div class="education-item">
+              <h3>R. K. S. H. Institution <span class="degree">[SSC in Science]</span></h3>
+              <span class="duration">Passing Year: 2012 | CGPA: 5.00/5.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+
+          <div class="section" id="experience">
+            <h2>Job Experience</h2>
+
+            <div class="experience-item" data-start="2023-09-01">
+              <h3>Ørsted <span class="role">[Full Stack Developer]</span></h3>
+              <span class="duration"></span>
+              <p>Building modern web applications and exploring AI & Machine Learning technologies.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="experience-item" data-start="2022-01-01" data-end="2023-05-31">
+              <h3>Braind Station 23 <span class="role">[Full Stack Developer]</span></h3>
+              <span class="duration"></span>
+              <p>Building ERP web applications in Odoo, Python, JavaScript, and PostgreSQL.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="experience-item" data-start="2020-11-01" data-end="2021-12-31">
+              <h3>Daffodil Computers <span class="role">[Full Stack Developer]</span></h3>
+              <span class="duration"></span>
+              <p>Building ERP web applications in Odoo, Python, JavaScript, and PostgreSQL.</p>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>Hobbies</h2>
+            <div class="hobbies">
+              <span>Problem Solving</span>
+              <span>Creative Projects [DIY]</span>
+              <span>Drawing</span>
+              <span>Learning New Things</span>
+              <span>Reading Suspense Thrillers</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ================= SKILLS ================= -->
+      <div class="section" id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+          <!-- Frontend -->
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-tags">
+              <span>Angular</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skill-tags">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Odoo</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+
+          <!-- DevOps -->
+          <div class="skill-category">
+            <h3>DevOps</h3>
+            <div class="skill-tags">
+              <span>Docker</span>
+              <span>CI/CD</span>
+              <span>Git</span>
+            </div>
+          </div>
+
+          <!-- AI & ML -->
+          <div class="skill-category">
+            <h3>AI / ML</h3>
+            <div class="skill-tags">
+              <span>Machine Learning</span>
+              <span>Data Analysis</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ================= PROJECTS ================= -->
+      <div class="section" id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects-container">
+
+          <div class="project-card">
+            <h3>Constructional Site</h3>
+            <p>A modern responsive website for managing construction projects, workers, and materials efficiently.
+            </p>
+            <a href="https://github.com/fahimanizam/construction_management_system.git" target="_blank"
+              class="github-btn">View on
+              GitHub</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Learning Management System</h3>
+            <p>A dynamic platform for managing online courses, students, and assessments.</p>
+            <a href="https://github.com/fahimanizam/learning_management_system" target="_blank" class="github-btn">View
+              on GitHub</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Blog Site</h3>
+            <p>A dynamic blog platform with post creation, editing, and responsive UI design.</p>
+            <a href="https://github.com/yourusername/blog-site" target="_blank" class="github-btn">View on
+              GitHub</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Health Check</h3>
+            <p>An online pharmacy management system with inventory tracking and order management.</p>
+            <a href="https://github.com/fahimanizam/health-checks.git" target="_blank" class="github-btn">View on
+              GitHub</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Customer Management System</h3>
+            <p>A CRM-style web application for managing customer records and business operations.</p>
+            <a href="https://github.com/fahimanizam/customer-management.git" target="_blank" class="github-btn">View on
+              GitHub</a>
+          </div>
+
+        </div>
+      </div>
+
     </div>
-    <div class="project-card">
-      <h3>📊 Construction Support</h3>
-      <p>Tracks your Leetcode & Codeforces progress with sleek charts. Built with <code>Python</code> + <code>Flask</code>.</p>
-      <a href="https://github.com/fahimanizam/construction_support" target="_blank">View on GitHub</a>
+  </section>
+
+  <!-- ================= MINI PROJECTS ================= -->
+  <section id="mini-projects">
+    <div class="container">
+      <div class="mini-projects-header">
+        <h1>Mini Projects</h1>
+        <p>Interactive JavaScript utilities built for practice and usability.</p>
+      </div>
+
+      <div class="mini-projects-grid">
+
+        <!-- Age Counter -->
+        <div class="mini-project">
+          <h2>Mini Age Counter</h2>
+          <p>Calculate your exact age instantly.</p>
+          <input type="date" id="birthdate">
+          <button onclick="calculateAge()">Calculate</button>
+          <div class="result" id="result"></div>
+        </div>
+
+        <!-- Password Generator -->
+        <div class="mini-project">
+          <h2>Password Generator</h2>
+          <p>Generate a strong and secure password.</p>
+          <input type="number" id="passLength" placeholder="Length (min 4)">
+          <button onclick="generatePassword()">Generate</button>
+          <div class="result" id="passwordResult"></div>
+        </div>
+
+        <!-- BMI Calculator -->
+        <div class="mini-project">
+          <h2>BMI Calculator</h2>
+          <p>Compute BMI using height in feet & inches.</p>
+          <input type="number" id="weight" placeholder="Weight (kg)">
+          <div class="height-group">
+            <input type="number" id="heightFeet" placeholder="Feet">
+            <input type="number" id="heightInch" placeholder="Inches">
+          </div>
+          <button onclick="calculateBMI()">Calculate</button>
+          <div class="result" id="bmiResult"></div>
+        </div>
+
+        <!-- Number Guessing -->
+        <div class="mini-project">
+          <h2>Number Guessing Game</h2>
+          <p>Guess a number between 1–10.</p>
+          <input type="number" id="guessInput" min="1" max="10">
+          <button onclick="checkGuess()">Guess</button>
+          <div class="result" id="guessResult"></div>
+        </div>
+
+      </div>
     </div>
+  </section>
+
+  <!-- More about me -->
+  <section id="more-about">
+    <div class="container">
+      <div class="title">
+        <h1>Little More About Me</h1>
+      </div>
+      <!-- ================= VISION BOARD ================= -->
+      <div class="section" id="vision">
+        <h2>Vision Board ✨</h2>
+        <div class="vision-grid">
+          <div class="vision-card">
+            <h3>🚀 Global Tech Career</h3>
+            <p>Work on impactful international products that scale globally.</p>
+          </div>
+          <div class="vision-card">
+            <h3>🤖 AI & ML Mastery</h3>
+            <p>Build intelligent systems and contribute to real-world AI research.</p>
+          </div>
+          <div class="vision-card">
+            <h3>📖 Tech Thought Leader</h3>
+            <p>Write blogs, mentor developers, and speak at conferences.</p>
+          </div>
+          <div class="vision-card">
+            <h3>💡 SaaS Founder</h3>
+            <p>Create scalable products that solve meaningful problems.</p>
+          </div>
+          <div class="vision-card">
+            <h3>🌍 Continuous Growth</h3>
+            <p>Never stop learning, building, and evolving.</p>
+          </div>
+          <div class="vision-card">
+            <h3>🏆 Financial Freedom</h3>
+            <p>Achieve independence through innovation and smart decisions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= LIBRARY ================= -->
+      <div class="section" id="library">
+        <h2>My Favorite Books 📚</h2>
+        <div class="library-grid">
+          <div class="book"
+            onclick="openBook('The Alchemist', 'assets/images/books/the_alchemist.jpg', 'A novel by Paulo Coelho about a shepherd journey.')">
+            <img src="assets/images/books/the_alchemist.jpg" alt="The Alchemist">
+            <p>The Alchemist</p>
+          </div>
+
+          <div class="book"
+            onclick="openBook('Atomic Habits', 'assets/images/atomic_habits.jpg', 'A self-help book by James Clear on habits.')">
+            <img src="assets/images/books/atomic_habits.jpg" alt="Atomic Habits">
+            <p>Atomic Habits</p>
+          </div>
+
+          <div class="book"
+            onclick="openBook('Harry Potter', 'assets/images/books/harry_potter.jpg', 'A fantasy series by J.K. Rowling.')">
+            <img src="assets/images/books/harry_potter.jpg" alt="Harry Potter">
+            <p>Harry Potter</p>
+          </div>
+        </div>
+
+        <div id="bookModal" class="book-modal">
+          <div class="book-content">
+            <span class="close-btn" onclick="closeBook()">✖</span>
+            <img id="bookImg" src="" alt="">
+            <h3 id="bookTitle"></h3>
+            <p id="bookReview"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Section -->
+      <div class="section" id="blog">
+        <h2>Journals</h2>
+
+        <div class="blog-grid">
+
+          <div class="blog-card" data-title="How I Built My Portfolio" data-image="assets/images/blog1.jpg"
+            data-content="In this article, I explain how I structured, designed, and optimized my portfolio website for performance and clean UI.">
+
+            <img src="assets/images/blog1.jpg" alt="Portfolio Blog">
+            <h3>How I Built My Portfolio</h3>
+            <p>Designing a clean and modern developer portfolio...</p>
+          </div>
+
+          <div class="blog-card" data-title="Why Clean Code Matters" data-image="assets/images/blog2.jpg"
+            data-content="Clean code improves maintainability, collaboration, and scalability. Here are the best practices I follow while building applications.">
+
+            <img src="assets/images/blog2.jpg" alt="Clean Code Blog">
+            <h3>Why Clean Code Matters</h3>
+            <p>Best practices for writing scalable applications...</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="blogModal" class="blog-modal">
+        <div class="blog-content">
+          <span class="close-btn" onclick="closeBook()">✖</span>
+          <img id="modalImage" src="">
+          <h3 id="modalTitle"></h3>
+          <p id="modalText"></p>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
+  <audio id="bg-music" autoplay>
+    <source src="assets/music/harry_potter.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Social + Scroll Wrapper -->
+  <div class="side-wrapper">
+
+    <!-- Social Bar -->
+    <div class="social-bar">
+      <a href="https://github.com/fahimanizam" target="_blank" class="social-item"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/fahima-nizam-nova/" target="_blank" class="social-item"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="mailto:fahimanizamnova@gmail.com" title="Click me to email" class="social-item gmail">
+        <i class="fas fa-envelope"></i>
+        <span class="tooltip">fahimanizamnova@gmail.com</span>
+      </a>
+      <div class="social-item" id="github">
+        GH
+        <div class="tooltip" id="githubTooltip">Loading...</div>
+      </div>
+    </div>
+
+
+    <!-- Scroll Buttons -->
+    <div class="scroll-group">
+      <button id="scrollUp" class="scroll-btn">↑</button>
+      <button id="scrollDown" class="scroll-btn">↓</button>
+    </div>
+
   </div>
-</section>
 
-<section id="cheatsheets">
-  <h2>// Kubernetes Cheatsheet</h2>
-  <div id="cheatsheet">Loading...</div>
-  <p>If the preview doesn't load, <a href="https://github.com/fahimanizam/fahimanizamnova.github.io/blob/master/cheatsheets/kubernetes.md" target="_blank">click here to open on GitHub</a>.</p>
-</section>
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer" id="contact">
+      <p>© 2025 Fahima Nizam Nova | Made with ☕</p>
+    </div>
+  </footer>
 
-<section id="contact">
-  <h2>// Contact</h2>
-  <p><strong>Email:</strong> <a href="mailto:fahimanizamnova@gmail.com" style="color: var(--accent);">fahimanizamnova@gmail.com</a></p>
-  <p><strong>GitHub:</strong> <a href="https://github.com/fahimanizam" target="_blank">fahimanizam</a></p>
-  <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/fahimanizam" target="_blank">Fahima Nizam Nova</a></p>
-</section>
+  <!-- ================= JS ================= -->
+  <script src="assets/js/script.js"></script>
 
-<footer>
-  <p>© 2025 FahimaNizamNova | Made with <code>&lt;/&gt;</code> and ☕</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
+
 </html>
